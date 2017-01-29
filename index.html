@@ -2,7 +2,7 @@
 &fov=90&heading=235&pitch=10&key=AIzaSyAlhvwVpw8NmqGYKQSlDeQgvV-fE7S2qDs" -->
 
 
-<!-- API KEY AIzaSyAlhvwVpw8NmqGYKQSlDeQgvV-fE7S2qDs -->
+<!-- API KEY AIzaSyCV5oHL9wW1wH1lk_AJZgzo94RByEAT4Qw -->
 
 
 <!DOCTYPE html>
@@ -80,19 +80,15 @@
         picked = all[Math.floor(Math.random()*all.length)]
         // debugger
         panorama = new google.maps.StreetViewPanorama(
-          // debugger
             document.getElementById('street-view'),
             {
               // position: {lat: one.lat, lng: one.lng},
-              // debugger
               position: {lat: picked[0], lng: picked[1]},
               // position: {lat: 21.46225, lng: -158.00366},
-              // debugger
               pov: {heading: 165, pitch: 0},
               // status: "OK"
               zoom: 1
             });
-            // debugger;
       }
     </script>
     <script async defer
