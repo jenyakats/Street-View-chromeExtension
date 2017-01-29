@@ -9,7 +9,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Street View</title>
+    <title>New Tab</title>
     <style>
       html, body {
         height: 100%;
@@ -31,9 +31,6 @@
     var longlat = getRandomInRange(-180, 180, 3) +","+ getRandomInRange(-90, 90, 3)
     var russiaLat = getRandomInRange(41.28413, 71.69002, 5)
     var russianLong = getRandomInRange(19.90929, 177.5103, 5)
-
-
-
     // var random ={
     //     "one": {lat:54.308412, lng:-9.45425 },
     //     "two": {lat: 54.3066544, lng: -9.4573443},
@@ -58,7 +55,6 @@
     //   }
     //
     // }
-
     // function something(){
     //   // var lat_start = places.usa.lat_start
     //   // var lng_start = places.usa.lng_start
@@ -66,15 +62,10 @@
     //   // lat_start += .1
     //
     // }
-
     // function searchMap(placesusa){
     //
     // }
 
-    var randomProperty = function (obj) {
-    var keys = Object.keys(obj)
-    return obj[keys[ keys.length * Math.random() << 0]];
-    };
 
     </script>
 
@@ -86,13 +77,8 @@
     <script>
       var panorama;
       function initialize() {
-
-        picked = countries[Math.floor(Math.random()*countries.length)]
+        picked = all[Math.floor(Math.random()*all.length)]
         // debugger
-        // picks a random country from my array then picks a random lat/lng
-        // picked = country[Math.floor(Math.random()*country.length)]
-        // ^^ only works with usa!!! :(
-
         panorama = new google.maps.StreetViewPanorama(
           // debugger
             document.getElementById('street-view'),

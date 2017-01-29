@@ -1,0 +1,19 @@
+{
+  "name": "Street View Randomizer Home Page",
+  "manifest_version": 2,
+  "version": "1.3",
+  "description": "Random Street View from around the world in your homepage.",
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["data.js"]
+  },
+  "icons": { "32": "icon.png"
+  },
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_title": "Place a pin"
+ }
+}
