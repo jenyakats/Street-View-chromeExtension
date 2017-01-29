@@ -23,7 +23,7 @@
   </head>
   <body>
 
-    <script>
+    <!-- <script>
     function getRandomInRange(from, to, fixed) {
         return (Math.random() * (to - from) + from).toFixed(fixed) * 1;
         // .toFixed() returns string, so ' * 1' is a trick to convert to number
@@ -67,30 +67,14 @@
     // }
 
 
-    </script>
+    </script> -->
 
 
-    <script src="data.js" type="text/javascript"></script>
-
+    <script src="data.js"></script>
 
     <div id="street-view"></div>
-    <script>
-      var panorama;
-      function initialize() {
-        picked = all[Math.floor(Math.random()*all.length)]
-        // debugger
-        panorama = new google.maps.StreetViewPanorama(
-            document.getElementById('street-view'),
-            {
-              // position: {lat: one.lat, lng: one.lng},
-              position: {lat: picked[0], lng: picked[1]},
-              // position: {lat: 21.46225, lng: -158.00366},
-              pov: {heading: 165, pitch: 0},
-              // status: "OK"
-              zoom: 1
-            });
-      }
-    </script>
+
+    <script src="load.js"></script>
     <script async defer
          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV5oHL9wW1wH1lk_AJZgzo94RByEAT4Qw&callback=initialize">
     </script>
