@@ -1,7 +1,7 @@
 {
   "name": "Street View Randomizer",
-  "manifest_version": 3,
-  "version": "3",
+  "manifest_version": 2,
+  "version": "2",
   "description": "Random Street View from around the world inside a new tab.",
   "chrome_url_overrides" : {
     "newtab": "index.html"
